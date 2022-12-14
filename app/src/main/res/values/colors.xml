@@ -7,4 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="round_layout">#49A8A5</color>
+    <color name="round_loss">#D16060</color>
+    <color name="round_win">#44D167</color>
 </resources>

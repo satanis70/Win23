@@ -5,17 +5,24 @@ import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.squareup.picasso.Picasso
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.target.CustomTarget
+import com.bumptech.glide.request.transition.Transition
 
 object LoadBackgroundImage {
-    fun setImage(context: Context, constraintLayout: ConstraintLayout){
-        Picasso.with(context).load(URL_BACKGROUND).into(object : com.squareup.picasso.Target {
-            override fun onBitmapLoaded(bitmap: Bitmap?, from: Picasso.LoadedFrom?) {
-                constraintLayout.background = BitmapDrawable(bitmap)
-            }
+    fun setImage(context: Context, constraintLayout: ConstraintLayout) {
+        Glide.with(context)
+            .asDrawable()
+            .load("http://49.12.202.175/win22/background.png")
+            .into(object : CustomTarget<Drawable>() {
+                override fun onResourceReady(
+                    resource: Drawable,
+                    transition: Transition<in Drawable>?
+                ) {
+                    constraintLayout.background = resource
+                }
 
-            override fun onBitmapFailed(errorDrawable: Drawable?) {}
-            override fun onPrepareLoad(placeHolderDrawable: Drawable?) {}
-        })
+                override fun onLoadCleared(placeholder: Drawable?) {}
+            })
     }
 }

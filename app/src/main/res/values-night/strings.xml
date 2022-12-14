@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="win23">Win23</string>
+    <string name="menu_dashboard">Home</string>
+    <string name="menu_leaderboard">Statistics</string>
+    <string name="menu_store">Settings</string>
+    <string name="validate">Validate</string>
+    <string name="enter_amount">Enter bank amount</string>
+    <string name="add_bet">Add bet</string>
+    <string name="enter_the_name_of_the_bet">Enter the name of the bet</string>
+    <string name="enter_betting_odds">Enter betting odds</string>
+    <string name="enter_the_bet_amount">Enter the bet amount</string>
+    <string name="lear_data">Сlear data</string>
+    <string name="notifications">Notifications</string>
 </resources>

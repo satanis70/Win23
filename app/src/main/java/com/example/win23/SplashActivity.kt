@@ -8,8 +8,6 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.example.win23.databinding.ActivitySplashBinding
-import com.squareup.picasso.Picasso
-import com.squareup.picasso.Picasso.LoadedFrom
 
 
 class SplashActivity : AppCompatActivity() {
